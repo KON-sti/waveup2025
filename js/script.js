@@ -8,6 +8,13 @@ $(function () {
     $(".hamburger").click(function () {
         $(this).children("img").toggleClass('turn_quarter');
     });
+    $(".m_nav a").click(function () {
+        $(".m_nav").stop().slideUp(0);
+    });
+    $(".m_nav a").click(function () {
+        $(".hamburger").children("img").removeClass('turn_quarter');
+    });
+
 
     // section 1
 
@@ -138,13 +145,13 @@ $(function () {
 
     // section 6
 
-    $("#faqs li p").click(function() {
+    $("#faqs li p").click(function () {
         $(this).parent().addClass("faqs_on").siblings().removeClass("faqs_on");
         updateFaqsSpacing();
     });
 
-    $(".faq_title").click(function() {
-        $(this).next().stop().slideToggle(300, function() {
+    $(".faq_title").click(function () {
+        $(this).next().stop().slideToggle(300, function () {
             updateFaqsSpacing();
         });
 
@@ -152,42 +159,42 @@ $(function () {
     });
 
     function updateFaqsSpacing() {
-        setTimeout(function() {
+        setTimeout(function () {
             var $activeTab = $(".faqs_on");
             if ($activeTab.length) {
                 var $container = $activeTab.find(".faq_container");
                 var totalHeight = 0;
-                
-                $container.find(".faq_answer:visible").each(function() {
+
+                $container.find(".faq_answer:visible").each(function () {
                     totalHeight += $(this).outerHeight(true);
                 });
-                
-                $container.find(".faq_title").each(function() {
+
+                $container.find(".faq_title").each(function () {
                     totalHeight += $(this).outerHeight(true);
                 });
-                
+
                 totalHeight += 64; // 여분 공간 추가 (필요 시 조정)
-                
+
                 $("#section_6").css("padding-bottom", totalHeight + "px");
             }
         }, 310);
     }
 
-    $(window).resize(function() {
+    $(window).resize(function () {
         if ($(".faqs_on").length) {
             updateFaqsSpacing();
         }
     });
 
-    $(document).ready(function() {
+    $(document).ready(function () {
         if ($("#faqs li").length && !$(".faqs_on").length) {
             $("#faqs li:first").addClass("faqs_on");
         }
-        
+
         if ($(".faqs_on").length) {
             updateFaqsSpacing();
         }
-        
+
         $(".faq_answer").hide();
     });
 

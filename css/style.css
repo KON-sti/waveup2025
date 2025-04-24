@@ -361,7 +361,7 @@ strong {
 }
 
 .banner_line {
-    width: calc(100% - 100px);
+    width: calc(100% - 6vw);
     height: 100px;
     border-bottom: 3px solid rgba(255, 255, 255, 0.5);
     max-width: 1320px;
@@ -370,8 +370,8 @@ strong {
 @media screen and (max-width: 1000px) {
 
     .banner_text {
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 3vw;
+        padding-right: 3vw;
     }
 
     .slogan_text {
@@ -503,7 +503,7 @@ strong {
 }
 
 .center_line {
-    width: calc(100% - 100px);
+    width: calc(100% - 6vw);
     height: 100px;
     border-bottom: 3px solid rgba(255, 255, 255, 0.5);
     max-width: 1320px;
@@ -513,6 +513,8 @@ strong {
 
     #section_1 {
         margin-top: 50px;
+        padding-left: 3vw;
+        padding-right: 3vw;
     }
 
     #section_1>h1 {
@@ -522,6 +524,8 @@ strong {
 
     .notice_title {
         height: 50px;
+        padding-left: 3vw;
+        padding-right: 3vw;
     }
 
     .notice_title>p {
@@ -533,7 +537,7 @@ strong {
     }
 
     .notice_text {
-        padding: 30px;
+        padding: 30px 3vw;
     }
 
     .notice_text>p {
@@ -846,6 +850,8 @@ strong {
 
     #section_3 {
         margin-top: 50px;
+        padding-left: 3vw;
+        padding-right: 3vw;
     }
 
     #section_3>h1 {
@@ -1025,7 +1031,7 @@ strong {
 
     .ticket_info_flex_container {
         display: block;
-        padding: 30px;
+        padding: 30px 3vw;
     }
 
     .ticket_info_left_content,
@@ -1192,8 +1198,8 @@ strong {
     left: 0;
     bottom: 0;
     height: 1px;
-    margin-left: 30px;
-    width: calc(100% - 60px);
+    margin-left: 3vw;
+    width: calc(100% - 6vw);
     border-bottom: 1px solid #777;
 }
 
@@ -1262,7 +1268,7 @@ strong {
 
     .m_ticket_flex_container {
         display: block;
-        padding: 30px;
+        padding: 30px 3vw;
     }
 
     .m_ticket_notice {
@@ -1288,6 +1294,22 @@ strong {
     .m_ticket_table {
         font-size: 16px;
         margin-bottom: 30px;
+    }
+
+    .m_ticket_table thead tr th {
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+
+    .m_ticket_table tbody tr th,
+    .m_ticket_table tbody tr td {
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+
+    .m_ticket_table tfoot tr td {
+        padding-left: 3vw;
+        padding-right: 3vw;
     }
 }
 
@@ -1328,6 +1350,8 @@ strong {
 
     #section_4 {
         margin-top: 50px;
+        padding-left: 3vw;
+        padding-right: 3vw;
     }
 
     #section_4>h1 {
@@ -1483,8 +1507,8 @@ strong {
     left: 0;
     bottom: 0;
     height: 1px;
-    margin-left: 30px;
-    width: calc(100% - 60px);
+    margin-left: 3vw;
+    width: calc(100% - 6vw);
     border-bottom: 1px solid #777;
 }
 
@@ -1616,6 +1640,8 @@ strong {
 
     #section_5 {
         margin-top: 50px;
+        padding-left: 3vw;
+        padding-right: 3vw;
     }
 
     #section_5>h1 {
@@ -1658,7 +1684,7 @@ strong {
 
     .enter_flex_container {
         display: block;
-        padding: 30px;
+        padding: 30px 3vw;
     }
 
     .enter_text {
@@ -1701,7 +1727,7 @@ strong {
 
     .watch_flex_container {
         display: block;
-        padding: 30px;
+        padding: 30px 3vw;
     }
 
     .watch_table {
@@ -1712,6 +1738,14 @@ strong {
     .watch_table tbody tr th,
     .watch_table tfoot tr th {
         font-size: 18px;
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+
+    .watch_table tbody tr td,
+    .watch_table tfoot tr td {
+        padding-left: 3vw;
+        padding-right: 3vw;
     }
 
     .location_accordion_btn {
@@ -1750,7 +1784,7 @@ strong {
 
     .location_flex_container {
         display: block;
-        padding: 30px;
+        padding: 30px 3vw;
     }
 
     .location_content {
@@ -1777,7 +1811,7 @@ strong {
 @media screen and (max-width: 600px) {
 
     .location_btn>a {
-        background: no-repeat url(../images/icon/icon_outlink.svg) top 7px right 25%, #0e0e0e;
+        background: no-repeat url(../images/icon/icon_outlink.svg) top 7px right 18%, #0e0e0e;
     }
 
 }
@@ -1792,8 +1826,6 @@ strong {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 50px;
-    padding-right: 50px;
     box-sizing: border-box;
     background-color: #0e0e0e;
 }
@@ -1825,7 +1857,12 @@ strong {
     cursor: pointer;
 }
 
+.search {
+    width: 100%;
+}
+
 .search>input {
+    width: 100%;
     border: none;
     outline: none;
     background-color: #0e0e0e;
@@ -1976,7 +2013,7 @@ strong {
 
     .searchbar {
         height: 50px;
-        padding: 0 30px;
+        padding: 0 3vw;
         margin-bottom: 50px;
     }
 
@@ -2007,14 +2044,14 @@ strong {
     }
 
     .faq_title {
-        padding: 30px 10px;
+        padding: 30px 3vw;
     }
 
     .faq_sub_title {
         width: 65px;
         font-size: 12px;
         padding-top: 6px;
-        padding-left: 17px;
+        padding-left: 14px;
         margin-right: 10px;
         align-items: center;
     }
@@ -2071,6 +2108,8 @@ strong {
 
     #section_7 {
         margin-top: 50px;
+        padding-left: 3vw;
+        padding-right: 3vw;
     }
 
     #section_7>h1 {
@@ -2079,7 +2118,7 @@ strong {
     }
 
     .contact {
-        gap: 100px;
+        gap: 20vw;
     }
 
 }
