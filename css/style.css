@@ -1493,7 +1493,7 @@ strong {
     font-size: 20px;
     border-bottom: 1px solid #0e0e0e;
     text-align: start;
-    padding: 10px 30px;
+    padding: 10px 3vw;
     font-weight: 700;
 }
 
@@ -1514,7 +1514,7 @@ strong {
 
 .watch_table tbody tr th,
 .watch_table tbody tr td {
-    padding: 30px;
+    padding: 30px 3vw;
     text-align: start;
     vertical-align: top;
 }
@@ -1734,12 +1734,20 @@ strong {
         font-size: 16px;
     }
 
+    .watch_table ul {
+        padding-left: 15px;
+    }
+
     .watch_table thead tr th,
     .watch_table tbody tr th,
     .watch_table tfoot tr th {
-        font-size: 18px;
+        font-size: 16px;
         padding-left: 3vw;
         padding-right: 3vw;
+    }
+
+    .watch_table tbody tr th{
+        padding-right: 0;
     }
 
     .watch_table tbody tr td,
@@ -1953,13 +1961,14 @@ strong {
 
 .faq_sub_title {
     width: 100%;
-    max-width: 60px;
+    max-width: 65px;
     min-width: 45px;
     display: block;
     box-sizing: border-box;
     height: 30px;
     font-size: 16px;
     font-weight: 400;
+    text-align: center;
     padding: 0 14px;
     padding-top: 4px;
     border: 1px solid #fff;
@@ -2051,9 +2060,7 @@ strong {
         width: 65px;
         font-size: 12px;
         padding-top: 6px;
-        padding-left: 14px;
         margin-right: 10px;
-        align-items: center;
     }
 
     .faq_title p {
@@ -2072,6 +2079,13 @@ strong {
         font-size: 16px;
     }
 
+}
+
+@media screen and (max-width: 400px) {
+    
+    .faq_sub_title {
+        font-size: 10px;
+    }
 }
 
 /* SECTION 6 END */
